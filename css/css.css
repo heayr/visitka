@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "OpenSans Regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans Italic";
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+body {
+  font-family: "OpenSans Regular", "Open Sans", Helvetica, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(37, 207, 212);
+  margin: 0 auto;
+  padding: 0;
+  align-items: flex-start;
+}
+
+h1,
+h2 {
+  margin: 10px 0;
+  font-family: "OpenSans Bold", Helvetica, sans-serif;
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: rgb(7, 158, 178);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 40px 0;
+  border-bottom: 1px dotted rgba(13, 0, 0, 0.383);
+}
+
+.header__title_link {
+  margin: 0 auto;
+  justify-self: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 70%;
+  margin: 0 auto 0;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-right: 1px dotted rgba(13, 0, 0, 0.383);
+  padding-right: 15px;
+}
+
+.aside__block {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.title__logo {
+  position: relative;
+  top: 8px;
+  left: 40px;
+}
+
+.main__image {
+  width: 400px;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px auto 20px;
+}
+
+.main__title {
+  margin: 10px auto 0;
+}
+
+.img2 {
+  width: 300px;
+
+  border-radius: 9px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  border-top: 1px dotted rgba(13, 0, 0, 0.383);
+  background-color: antiquewhite;
+  padding: 40px 0 60px;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.footer__icon {
+  position: relative;
+  width: 20px;
+  top: 5px;
+}
+
+.icon-up {
+  width: 50px;
+  opacity: 0.6;
+}
